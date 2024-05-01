@@ -1,0 +1,108 @@
+/* Chatbot Container */
+.chatbot-container {
+    width: auto;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Chatbot Messages */
+  .chatbot-messages {
+    padding: 10px;
+    height: 350px;
+    overflow-y: auto;
+  }
+  
+  /* User and Bot Messages */
+  .user,
+  .bot {
+    margin-bottom: 5px;
+  }
+  
+  .user {
+    color: #040342; /* WhatsApp green */
+    text-align: right;
+  }
+  
+  .bot {
+    color: rgb(22, 133, 120); /* WhatsApp teal */
+  }
+  
+  /* Chatbot Input */
+  .chatbot-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Input Field */
+  input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+  }
+  
+  /* Submit Button */
+  button {
+    background-color: #25d366; /* WhatsApp green */
+    color: white;
+    border: none;
+    margin: 10px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.sand-timer-container {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
+}
+
+.sand-timer {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid #4caf50; /* Green color */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  animation: rotateSandTimer 2s linear infinite;
+}
+
+@keyframes rotateSandTimer {
+  0% {
+    transform: translateX(-50%) rotate(180deg);
+  }
+  50% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(180deg);
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #f8d7da; /* Red background color */
+  border: 1px solid #f5c6cb; /* Red border color */
+  color: #721c24; /* Red text color */
+  border-radius: 5px;
+}
+
+.popup p {
+  margin: 0;
+  display: inline;
+}

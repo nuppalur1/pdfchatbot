@@ -1,0 +1,31 @@
+{
+  "type": "module",
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/core": "^0.1.61",
+    "@langchain/openai": "^0.0.28",
+    "@pinecone-database/pinecone": "^2.2.0",
+    "axios": "^1.6.2",
+    "body-parser": "^1.20.2",
+    "compute-cosine-similarity": "^1.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "excel4node": "^1.8.2",
+    "exceljs": "^4.4.0",
+    "express": "^4.18.2",
+    "langchain": "^0.1.36",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.19.1",
+    "pdf-parse": "^1.1.1"
+  }
+}
